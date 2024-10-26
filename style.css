@@ -1,10 +1,15 @@
+@font-face {
+  font-family: ComicRunes;
+  src: url(./ComicRunes-njeJ.otf);
+}
+
 * {
   font-family: "Roboto", serif;
 }
 
 body {
-  margin-left: 25%;
-  margin-right: 25%;
+  margin-left: 20%;
+  margin-right: 20%;
   margin-top: 0%;
   margin-bottom: 0%;
   height: 100%;
@@ -12,61 +17,160 @@ body {
   flex-direction: column;
 }
 
-header,
+a {
+  text-decoration: none;
+}
+
+a:visited {
+  color: #f9faf8;
+  text-decoration: none;
+}
+
+#header,
 #main-title,
 #information,
 #quote,
 #action-block,
-footer {
+#footer {
   padding-left: 100px;
   padding-right: 100px;
 }
 
-header,
+#header {
+  margin-bottom: auto;
+  display: flex;
+  gap: 20px;
+  padding-top: 10px;
+}
+
+#header,
 #main-title {
   background-color: #1f2937;
   color: #f9faf8;
 }
 
-header div {
-  display: flex;
-  gap: 20px;
-}
-
 .header-logo {
   margin-right: auto;
+  font-size: 24px;
+  color: #f9faf8;
+  font-family: "ComicRunes";
+}
+
+.header-div {
+  font-size: 18px;
+  color: #e5e7eb;
 }
 
 #main-title {
-  padding-top: 50px;
-  padding-bottom: 50px;
+  display: flex;
+  gap: 30px;
+  padding-top: 40px;
+  padding-bottom: 40px;
+}
+
+.main-heading {
+  font-size: 48px;
+  font-weight: 900;
+  color: #f9faf8;
+}
+
+.signup-button {
+  background-color: #3882f6;
+  color: #f9faf8;
+  margin-top: 10px;
+  padding: 7px 20px;
+  border-radius: 10px;
+  border: none;
+  cursor: pointer;
+}
+
+#main-image {
+  height: 300px;
+  width: 600px;
 }
 
 #information {
-  padding-top: 30px;
-  padding-bottom: 30px;
+  display: flex;
+  flex-direction: column;
+  padding-top: 35px;
+}
+
+.information-title {
+  text-align: center;
 }
 
 #information-tabs {
   display: flex;
+  justify-content: space-evenly;
+  padding-bottom: 35px;
 }
 
 .information-tab {
+  flex: 1;
   display: flex;
   flex-direction: column;
+  text-align: center;
+}
+
+.information-tab img {
+  margin: auto;
+  width: 100px;
+  height: 100px;
 }
 
 #quote {
   background-color: #e5e7eb;
-  padding-top: 50px;
-  padding-bottom: 50px;
+  padding-top: 40px;
+  padding-bottom: 40px;
+}
+
+.quote-text {
+  color: #1f2937;
+  font-size: 36px;
+}
+
+.quote-author {
+  text-align: end;
+  font-weight: bold;
 }
 
 #action-block {
-  padding-top: 50px;
-  padding-bottom: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 30px;
 }
 
-footer {
+.action {
+  display: flex;
+  gap: 30px;
+  justify-content: center;
+  align-items: center;
+  background-color: #3882f6;
+  color: #e5e7eb;
+  padding: 30px;
+}
+
+.action-title {
+  font-weight: bold;
+}
+
+.action-button {
+  background-color: #3882f6;
+  color: #f9faf8;
+  margin-top: 10px;
+  padding: 7px 20px;
+  border-radius: 10px;
+  border: 1px solid #e5e7eb;
+  cursor: pointer;
+}
+
+#footer {
   background-color: #1f2937;
+  color: #e5e7eb;
+  text-align: center;
+}
+
+#footer p {
+  font-size: 14px;
 }
